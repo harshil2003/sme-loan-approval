@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
+import pickle
 
 st.title("AI-Powered SME Loan Approval")
 
@@ -24,8 +26,8 @@ if st.button("Check Loan Approval"):
         st.success("Loan Approved ✅")
     else:
         st.error("Loan Denied ❌")
-import os
-import pickle
+        
+
 
 # Get the current directory of the script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
