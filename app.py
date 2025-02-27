@@ -30,7 +30,7 @@ if st.button("Check Loan Approval"):
 
 
 # Get the current directory of the script
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = loan_model.pkl
 
 # Construct the absolute path
 model_path = os.path.join(BASE_DIR, "loan_model.pkl")
