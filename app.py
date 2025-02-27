@@ -24,3 +24,15 @@ if st.button("Check Loan Approval"):
         st.success("Loan Approved ✅")
     else:
         st.error("Loan Denied ❌")
+import os
+import pickle
+
+# Get the current directory of the script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the absolute path
+model_path = os.path.join(BASE_DIR, "loan_model.pkl")
+
+# Load the model
+with open(model_path, "rb") as file:
+    model = pickle.load(file)
